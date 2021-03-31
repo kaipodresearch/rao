@@ -1,7 +1,6 @@
 // Written by Milad Kahsari Alhadi
 // aiooo.ir
 // Telegram: clightning
-
 #pragma once
 
 #include "Windows.h"
@@ -17,7 +16,7 @@ struct BASE {
 };
 
 namespace obfuscation {
-	VOID	load(BASE arg_api);
+	VOID	load();
 	HMODULE get_proc_address(HMODULE arg_module_base, DWORD arg_hash, DWORD arg_data_directory);
 	HMODULE resolved_functions(HMODULE arg_module_base, DWORD arg_hash);
 }
@@ -27,4 +26,5 @@ namespace encoder {
 };
 
 extern BASE g_CallGate;
+
 
