@@ -1,10 +1,10 @@
 // Written by Milad Kahsari Alhadi
 // aiooo.ir
 // Telegram: clightning
-
 #include "obfuscation.h"
 
-VOID obfuscation::load(BASE arg_api)
+
+VOID obfuscation::load()
 {
 	if ((g_CallGate.User32 = GetModuleHandleW(L"USER32.DLL")) == ERROR) {
 		g_CallGate.User32 = LoadLibraryW(L"USER32.DLL");
@@ -59,4 +59,5 @@ UINT encoder::api_call_hashed(PCHAR arg_input)
 HMODULE obfuscation::resolved_functions(HMODULE arg_module_base, DWORD arg_hash) {
 	return get_proc_address(arg_module_base, arg_hash, 0);
 }
+
 
