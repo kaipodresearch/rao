@@ -1,5 +1,8 @@
-#include "obfuscation.h"
+// Written by Milad Kahsari Alhadi
+// aiooo.ir
+// Telegram: clightning
 
+#include "obfuscation.h"
 
 VOID obfuscation::load(BASE arg_api)
 {
