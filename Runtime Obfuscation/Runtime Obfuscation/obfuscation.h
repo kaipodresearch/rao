@@ -1,3 +1,7 @@
+// Written by Milad Kahsari Alhadi
+// aiooo.ir
+// Telegram: clightning
+
 #pragma once
 
 #include "Windows.h"
